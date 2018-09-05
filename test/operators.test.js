@@ -135,19 +135,19 @@ test('Evens - 3', () => {
   expect( result ).toEqual( false );
 });
 
-test('averageOfStrings - 1', () => {
+test.only('averageOfStrings - 1', () => {
   const result = averageOfStrings( [12, '6', 0, '8', '1'] );
 
   expect( result ).toEqual( 5 );
 });
 
-test('averageOfStrings - 2', () => {
+test.only('averageOfStrings - 2', () => {
   const result = averageOfStrings( ['5', 31, 7, '2', '1', -1, '0'] );
 
   expect( result ).toEqual( 2 );
 });
 
-test('footballScores - 1', () => {
+test.only('footballScores - 1', () => {
   const result = footballScores( [
     {home: 1, away: 2},
     {home: 4, away: 5},
@@ -158,7 +158,7 @@ test('footballScores - 1', () => {
   expect( result ).toEqual( ['away', 'away', 'home', 'draw'] );
 });
 
-test('footballScores - 2', () => {
+test.only('footballScores - 2', () => {
   const result = footballScores( [
     {home: 2, away: 1},
     {home: 4, away: 5},
